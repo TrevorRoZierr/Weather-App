@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grove-St. ~ Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="firsthead">
+        <header class="header">
+            <a href="#" class="logo">GROVE <i class="fa-solid fa-cloud-meatball"></i></a>
+            <nav class="navbar">
+                <a href="#" id="active">Home</a>
+                <a href="#">API Key</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+    </div>
+
+    <div class="weatherOutline">
+        <div class="weatherSearchBar">
+            <input type="text" placeholder="Enter The Location" class="inputBox">
+            <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+        </div>
+    </div>
+
+    <section class="weatherDetailsOT">
+        <div class="weatherDetails">
+            <img src="assests/img.png" alt="" class="weatherImg">
+
+            <div class="weatherBox">
+                <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">Rainy</p>
+                <p class="nameOfPlace">Pune</p>
+                <h2 class="reload">Reset</h2>
+            </div>
+
+            <div class="weatherInfo">
+                <div class="humidity">
+                    <i class="fa-solid fa-temperature-three-quarters"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="windSpeed">12Km/Hr</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/2329b788ac.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

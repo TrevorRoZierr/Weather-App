@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   text-decoration: none;
+}
+
+body{
+    font-family: 'Tulpen One', cursive;
+    background: url(assests/bg.jpg);
+}
+
+.firsthead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.header{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 15px 8px 26px -1px white;
+}
+
+.logo{
+    font-family: 'Tulpen One', cursive;
+    font-size: 4rem;
+    font-weight: 400;
+    color: white;
+    margin-left: 20px;
+    padding: 10px;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.logo:hover{
+    color: #85D249;
+    font-size: 5rem;
+}
+
+.logo i{
+    margin-left: 5px;
+    font-size: 3rem;
+}
+
+.navbar{
+    margin-right: 30px;
+}
+
+.navbar a,
+#active{
+    font-family: 'Handjet', cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+
+.navbar a:hover{
+    color: greenyellow;
+    font-size: 2rem;
+}
+
+.weatherOutline{
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.weatherSearchBar input{
+    width: 30vw;
+    height: 7vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    outline: 1px solid white;
+}
+
+.weatherSearchBar input::placeholder{
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weatherSearchBar button{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: -50px;
+    background-color: white;
+    color: black;
+}
+
+.weatherDetailsOT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.weatherDetails{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    height: min-content;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 1px 20px 1px white;
+    outline: 1px solid white;
+}
+
+.weatherDetails img{
+    margin-block-start: 25px;
+    margin-block-end: 10px;
+    width: 60%;
+}
+
+.weatherBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: min-content;
+    margin-top: 10px;
+}
+
+.weatherBox p{
+    margin-top: 5px;
+}
+
+.temperature{
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: 'Handjet', cursive;
+    font-weight: 600;
+}
+
+.description{
+    font-family: 'Handjet', cursive;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.nameOfPlace{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.weatherInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px
+}
+
+.humidity, .wind{
+    display: flex;
+    text-align: center;
+}
+
+.humidity{
+    margin-left: 15px;
+}
+
+#humidity,
+#windSpeed{
+    font-family: 'Handjet', cursive;
+}
+
+.wind{
+    margin-right: 15px;
+}
+
+.reload{
+    margin-block: 20px;
+    font-family: 'Handjet', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #FDCD00;
+    background-color: #5CCBF7;
+    padding: 10px;
+    transition: .3s;
+    text-align: center;
+}
+
+.reload:hover{
+    color: #85D249;
+    background-color: #FDCD00;
+    font-size: 24px;
+}
+
+.weatherDetails i{
+    font-size: 40px;
+}
+
+.text{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.text span{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .header{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        font-size: 2.2rem;
+    }
+
+    .logo i{
+        font-size: 1rem;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar a{
+        font-size: 1.2rem;
+    }
+
+    #active{
+        font-size: 1.2rem;
+    }
+
+    .weatherSearchBar{
+        display: flex;
+    }
+
+    .weatherSearchBar input{
+        width: 300px;
+    }
+
+    .weatherDetails{
+        width: 80%;
+    }
+}
